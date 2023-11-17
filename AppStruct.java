@@ -144,7 +144,7 @@ class BasicFunctions{
     public void login(){
         //would log in a user
     }
-    public void loginChecker(){
+    public boolean loginChecker(){
         //Check in the array for the username and provide with previous
         //game state
     }
