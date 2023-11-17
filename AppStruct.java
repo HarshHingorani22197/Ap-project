@@ -1,5 +1,5 @@
 package org.example;
-
+import javafx.application.Application;  
 import java.util.ArrayList;
 
 interface Canvas{
@@ -178,8 +178,7 @@ class BasicFunctions{
     }
 }
 
-public class AppStruct
-{
+public class AppStruct extends Application{
     public static void main( String[] args ){
 
 
