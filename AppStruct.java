@@ -124,6 +124,10 @@ class User{
         this.passwd=pass;
     }
 
+    public ArrayList<ScoringSystem> getGameStates() {
+        return gameStates;
+    }
+
 }
 
 
