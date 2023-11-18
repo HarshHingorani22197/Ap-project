@@ -12,8 +12,8 @@ public class WrongKeyPress extends Exception {
 
 
 
-public class CorrectLogin extends Exception {
-    public CorrectLogin(String message) {
+public class WrongLogin extends Exception {
+    public WrongLogin(String message) {
         super(message);
     }
 }
