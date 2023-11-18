@@ -1,9 +1,9 @@
 package org.example;
-import javafx.application.Application;  
+import javafx.application.Application;
 import java.util.ArrayList;
 
 
-public class WrongKeyPress extends Exception {
+class WrongKeyPress extends Exception {
     public WrongKeyPress(String message) {
         super(message);
     }
@@ -12,7 +12,7 @@ public class WrongKeyPress extends Exception {
 
 
 
-public class WrongLogin extends Exception {
+class WrongLogin extends Exception {
     public WrongLogin(String message) {
         super(message);
     }
@@ -20,7 +20,7 @@ public class WrongLogin extends Exception {
 
 
 
-public class InsufficientCherries extends Exception {
+class InsufficientCherries extends Exception {
     public InsufficientCherries(String message) {
         super(message);
     }
