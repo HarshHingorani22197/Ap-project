@@ -2,6 +2,33 @@ package org.example;
 import javafx.application.Application;  
 import java.util.ArrayList;
 
+
+public class WrongKeyPress extends Exception {
+    public WrongKeyPress(String message) {
+        super(message);
+    }
+}
+
+
+
+
+public class CorrectLogin extends Exception {
+    public CorrectLogin(String message) {
+        super(message);
+    }
+}
+
+
+
+public class InsufficientCherries extends Exception {
+    public InsufficientCherries(String message) {
+        super(message);
+    }
+}
+
+
+
+
 interface Canvas{
     void shiftAndTranslateOrigin();
 
