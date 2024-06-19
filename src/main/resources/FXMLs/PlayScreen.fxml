@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="screenMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#extendStick" onMouseReleased="#mouseReleased" prefHeight="588.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Classes.PlayScreenController">
+   <children>
+      <ImageView fitHeight="596.0" fitWidth="770.0" layoutX="-5.0" layoutY="-3.0">
+         <image>
+            <Image url="@../Images/background.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="platform" arcHeight="5.0" arcWidth="5.0" height="237.0" layoutX="134.0" layoutY="356.0" opacity="0.78" stroke="BLACK" strokeType="INSIDE" width="132.0">
+         <effect>
+            <Glow level="1.0" />
+         </effect></Rectangle>
+      <Line fx:id="stick" endX="44.0" endY="153.0" layoutX="222.0" layoutY="202.0" startX="44.0" startY="153.0" stroke="#0abeff" strokeWidth="5.0" />
+      <Rectangle fx:id="nextPlatform" arcHeight="5.0" arcWidth="5.0" height="248.0" layoutX="765.0" layoutY="358.0" opacity="0.78" stroke="BLACK" strokeType="INSIDE" width="132.0">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Rectangle>
+      <ImageView fx:id="hero" fitHeight="91.0" fitWidth="71.0" layoutX="165.0" layoutY="271.0">
+         <image>
+            <Image url="@../Images/stickHeroCharacter.png" />
+         </image>
+         <effect>
+            <Bloom>
+               <input>
+                  <Glow level="0.14" />
+               </input>
+            </Bloom>
+         </effect>
+      </ImageView>
+      <Button layoutX="700.0" layoutY="17.0" mnemonicParsing="false" opacity="0.0" prefHeight="43.0" prefWidth="50.0" text="Button" />
+      <ImageView fitHeight="66.0" fitWidth="200.0" layoutX="248.0" layoutY="27.0">
+         <image>
+            <Image url="@../Images/ScoreIcon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="scoreLabel" layoutX="448.0" layoutY="12.0" prefHeight="81.0" prefWidth="159.0" text="0">
+         <font>
+            <Font size="67.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="76.0" fitWidth="79.0" layoutX="617.0" layoutY="12.0">
+         <image>
+            <Image url="@../Images/RedPotion.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="79.0" layoutX="617.0" layoutY="83.0">
+         <image>
+            <Image url="@../Images/blueBottle.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="bluePotionCounter" layoutX="697.0" layoutY="88.0" prefHeight="66.0" prefWidth="107.0" text="0">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label fx:id="redPotionCounter" layoutX="697.0" layoutY="17.0" prefHeight="66.0" prefWidth="107.0" text="0">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="pRedPotion" fitHeight="43.0" fitWidth="50.0" layoutX="806.0" layoutY="330.0">
+         <image>
+            <Image url="@../Images/RedPotion.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pBluePotion" fitHeight="37.0" fitWidth="44.0" layoutX="809.0" layoutY="333.0">
+         <image>
+            <Image url="@../Images/blueBottle.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
