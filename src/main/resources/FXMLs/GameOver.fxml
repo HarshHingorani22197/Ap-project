@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Classes.GameOverController">
+    <children>
+        <ImageView fitHeight="596.0" fitWidth="770.0" layoutX="-5.0" layoutY="-3.0">
+            <image>
+                <Image url="@../Images/background.png" />
+            </image>
+        </ImageView>
+        <Rectangle fx:id="platform" arcHeight="5.0" arcWidth="5.0" height="237.0" layoutX="134.0" layoutY="356.0" opacity="0.78" stroke="BLACK" strokeType="INSIDE" width="132.0">
+            <effect>
+                <Glow level="1.0" />
+            </effect></Rectangle>
+        <ImageView fitHeight="122.0" fitWidth="452.0" layoutX="165.0" layoutY="-15.0">
+            <image>
+                <Image url="@../Images/Title.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="408.0" layoutY="277.0">
+            <image>
+                <Image url="@../Images/RestartIcon.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="408.0" layoutY="339.0">
+            <image>
+                <Image url="@../Images/MainMenuIcon.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="99.0" fitWidth="529.0" layoutX="144.0" layoutY="58.0">
+            <image>
+                <Image url="@../Images/GameOverIcon.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="hero" fitHeight="91.0" fitWidth="71.0" layoutX="195.0" layoutY="277.0">
+            <image>
+                <Image url="@../Images/deadamongus.png" />
+            </image>
+            <effect>
+                <Bloom>
+                    <input>
+                        <Glow level="0.14" />
+                    </input>
+                </Bloom>
+            </effect>
+        </ImageView>
+        <ImageView fx:id="hero1" fitHeight="91.0" fitWidth="94.0" layoutX="128.0" layoutY="268.0">
+            <image>
+                <Image url="@../Images/greenamongus.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="408.0" layoutY="402.0">
+            <image>
+                <Image url="@../Images/ReviveIcon.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="restartButton" layoutX="408.0" layoutY="278.0" mnemonicParsing="false" onAction="#restart" opacity="0.0" prefHeight="35.0" prefWidth="200.0" text="Button" />
+        <Button fx:id="mainMenu" layoutX="408.0" layoutY="339.0" mnemonicParsing="false" onAction="#mainMenu" opacity="0.0" prefHeight="35.0" prefWidth="200.0" text="Button" />
+        <Button fx:id="revive" layoutX="408.0" layoutY="402.0" mnemonicParsing="false" onAction="#revive" opacity="0.0" prefHeight="35.0" prefWidth="200.0" text="Button" />
+        <Label fx:id="reviveLabel" layoutX="365.0" layoutY="437.0" prefHeight="35.0" prefWidth="358.0" textAlignment="CENTER" textFill="RED">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
