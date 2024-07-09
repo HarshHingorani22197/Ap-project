@@ -85,7 +85,7 @@ To download and play Stick Hero, follow these steps:
 1. *Clone the Repository:*
    - Open IntelliJ IDEA.
    - Go to File -> New -> Project from Version Control -> Git.
-   - Enter https://github.com/theshamiksinha/StickHero-Game-JavaFX.git as the Git repository URL and clone the project.
+   - Enter https://github.com/HarshHingorani22197/Stick-Hero-Game.git as the Git repository URL and clone the project.
 
 2. *Configure JavaFX SDK:*
    - Extract the downloaded JavaFX SDK to a preferred location on your computer.
